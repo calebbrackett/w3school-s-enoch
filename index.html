@@ -1,20 +1,20 @@
 <html>
-<h1>Enochbrackett's website2</h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h1>enoch's website</h1>
+<p style="font-size: 30pt;">Enoch's website</p>
+<p>Please enter password to view site</p>
+<p>Password:<input id="passwordBox" type="password"/></p>
+<a href="main.html"onclick="return checkPassword();">
+Click here to submit password
+</a>
+<script>
+    function checkPassword() {
+        var password = document.getElementById("passwordBox") 
+        var passwordText = password.value;
+        if(passwordText == "enoch2014"){
+            return true;
+        }
+        alert("Access Denied! Incorrect Password!");
+        return false
+    }
+ </script>
 </html>
